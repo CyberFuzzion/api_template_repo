@@ -10,14 +10,15 @@ This project demonstrates the Wizkid POC (Provides a hosted API that powers the 
 - ```Framework / Environment```   :  Node.js && Express
 - ```version control```   : Git/Github
 
-## Installation
+## Installation and Setup
 1. Ensure you have all the below listed stacks on your machine
 2. From you terminal run ```git clone https://github.com/CyberFuzzion/wizkid.git```
 3. After cloning run ```cd wizkid``` to navigate to cloned directory
 4. run ```npm install``` to install all the devDevpendencies. **See "devDependencies" section in package.json file for list of all packages that will be installed**
-5. run ```npm run migrate``` to run database migrations
-6. run ```npm run seed``` to seed the database with prepared "transactions" seeds
-7. run ```npm test``` or ```npm t``` to run test
+5. Add environment variables in ```.env``` file, see ```env-sample``` file for example.
+6. run ```npm run migrate``` to run database migrations
+7. run ```npm run seed``` to seed the database with prepared "transactions" seeds
+8. run ```npm test``` or ```npm t``` to run test
 
 ## Scripts
 - ```npm run start:dev```   : To run development mode
@@ -27,7 +28,7 @@ This project demonstrates the Wizkid POC (Provides a hosted API that powers the 
 - See the **scripts** section of **package.json** file for all available configured scripts. 
 
 ## Models and Database
-Setup to use Postgres and Sequelise ORM.
+Postgres and Sequelise ORM Script.
 - ```npm run migrate``` : to run models migration to database
 - ```npm run undo-migrate``` : to undo models migration to database
 - ```npm run seed``` : to run seed

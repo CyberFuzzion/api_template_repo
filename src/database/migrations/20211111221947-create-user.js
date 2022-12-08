@@ -20,6 +20,9 @@ module.exports = {
       branch: {
         type: Sequelize.STRING
       },
+      image_url: {
+        type: Sequelize.STRING
+      },
       password: {
         type: Sequelize.STRING
       },

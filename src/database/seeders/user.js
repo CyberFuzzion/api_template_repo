@@ -8,6 +8,7 @@ module.exports = {
             last_name: 'Doe',
             login_ID: 6,
             branch: 'branch1',
+            image_url: 'https://unsplash.com/photos/sLxe9F-gyYo',
             password: 'xxxxxxxxxxxxxx',
             createdAt: new Date(),
             updatedAt: new Date(),
