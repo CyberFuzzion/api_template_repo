@@ -12,8 +12,8 @@ This project demonstrates the Wizkid POC (Provides a hosted API that powers the 
 
 ## Installation and Setup
 1. Ensure you have all the below listed stacks on your machine
-2. From you terminal run ```git clone https://github.com/CyberFuzzion/wizkid.git```
-3. After cloning run ```cd wizkid``` to navigate to cloned directory
+2. From you terminal run ```git https://github.com/CyberFuzzion/api_template_repo.git```
+3. After cloning run ```cd api_template_repo``` to navigate to cloned directory
 4. run ```npm install``` to install all the devDevpendencies. **See "devDependencies" section in package.json file for list of all packages that will be installed**
 5. Add environment variables in ```.env``` file, see ```env-sample``` file for example.
 6. run ```npm run migrate``` to run database migrations
@@ -39,6 +39,21 @@ See sequelise documentation below for more guides on creating and managing model
 ## API Documentation
 ### Routes
 - ```POST /api/v1/auth/sign_in```: Sign in
+- Payload
+```
+body:
+{
+  branch, login_ID
+}
+```
+
 - ```GET  /api/v1/transactions/fetch```: Get Transactions
+- Payload
+```
+header:
+{
+  authorization: `Bearer ${token}`
+}
+```
 
 ## Thank you
